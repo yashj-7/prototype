@@ -101,10 +101,10 @@ public class MainActivity extends AppCompatActivity {
                 }
                 Log.v("ans",""+ans);
                 if(ans==c){
-                    tts.speak("correct",TextToSpeech.QUEUE_ADD,null);
+                    tts.speak("correct",TextToSpeech.QUEUE_FLUSH,null);
                     Toast.makeText(MainActivity.this, "correct", Toast.LENGTH_SHORT).show();
                 }else{
-                    tts.speak("incorrect",TextToSpeech.QUEUE_ADD,null);
+                    tts.speak("incorrect",TextToSpeech.QUEUE_FLUSH,null);
                     Toast.makeText(MainActivity.this, "incorrect", Toast.LENGTH_SHORT).show();
                 }
 
